@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class = "cabecera">
+        <p>Clientes</p>
+        <p>Productos</p>
+        <p>Sobre nosotros</p>
+        
+    </div>
+
+    <div class = "contenido">
+
+        <div class = "buscador">
+
+            <input type="text" placeholder = "Busqueda por nombre" class = "barra">
+            <input type="button" value="Buscar" class = "boton">
+            <input type="button" value="Añadir Cliente" id="boton-mostrar-modal" class="boton">
+
+        </div>
+        <div id="crearTarjetaModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Crear Nueva Tarjeta</h2>
+                <input type="text" placeholder="Nombre" id="nombre" class="input">
+                <input type="text" placeholder="Apellidos" id="apellidos" class="input">
+                <input type="text" placeholder="Descripción" id="descripcion" class="input">
+                <input type="text" placeholder="URL de la imagen" id="imagen" class="input">
+                <input type="button" value="Crear Tarjeta" id="boton-crear" class="boton">
+            </div>
+        </div>
+
+    </div>
+
+    <div class = "clientes">
+
+        <div class = "tarjeta" id = "1">
+
+            <div class="foto">
+
+                <img src="./wyoming.jpg">
+
+            </div>
+
+            <div class = "texto">
+
+                <p class = "nombre">Bruno</p>
+
+                <p class = "apellidos">Fandiño Veiga</p>
+
+                <p class = "descripcion">Estudiando informatica</p>
+
+                <input type="button" value="Borrar" class = "botonborrar">
+
+            </div>
+
+        </div>
+
+        <div class = "tarjeta" id = "2">
+
+            <div class="foto">
+
+                <img src="./crichiano.jpg">
+
+            </div>
+
+            <div class = "texto">
+
+                <p class = "nombre">Roberto</p>
+
+                <p class = "apellidos">Castro Liste</p>
+
+                <p class = "descripcion">Profesor en AulaEstudio</p>
+
+                <input type="button" value="Borrar" class = "botonborrar">
+
+            </div>
+
+        </div>
+
+        <div class = "tarjeta" id = "3">
+
+            <div class="foto">
+
+                <img src="./adriano.avif">
+
+            </div>
+
+            <div class = "texto">
+
+                <p class = "nombre">Adriano</p>
+
+                <p class = "apellidos">Condines Celada</p>
+
+                <p class = "descripcion">Vivo como el pupilo de Bruno</p>
+
+                <input type="button" value="Borrar" class = "botonborrar">
+
+            </div>
+
+        </div>
+
+        <div class = "tarjeta" id = "4">
+
+            <div class="foto">
+
+                <img src="./noel.jpg">
+
+            </div>
+
+            <div class = "texto">
+
+                <p class = "nombre">Noel</p>
+
+                <p class = "apellidos">Santiañez Rodríguez</p>
+
+                <p class = "descripcion">Fumando BASUCO</p>
+
+                <input type="button" value="Borrar" class = "botonborrar">
+
+            </div>
+
+        </div>
+
+        <div class = "tarjeta" id = "5">
+
+            <div class="foto">
+
+                <img src="./astor.jpg">
+
+            </div>
+
+            <div class = "texto">
+
+                <p class = "nombre">Astor</p>
+
+                <p class = "apellidos">Fernández Estévez</p>
+
+                <p class = "descripcion">Con que haya alcohol y mujeres voy</p>
+
+                <input type="button" value="Borrar" class = "botonborrar">
+
+            </div>
+
+        </div>
+
+        <div class = "tarjeta" id = "6">
+
+            <div class="foto">
+
+                <img src="./birhan.jpg">
+
+            </div>
+
+            <div class = "texto">
+
+                <p class = "nombre">Birhan</p>
+
+                <p class = "apellidos">Fernández Fernández</p>
+
+                <p class = "descripcion">Me gustan los videojuegos</p>
+
+                <input type="button" value="Borrar" class = "botonborrar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "./index.js"></script>
+
+</body>
+</html>
